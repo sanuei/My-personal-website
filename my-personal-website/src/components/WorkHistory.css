@@ -1,0 +1,50 @@
+.work-history {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  .work-history h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+  }
+  
+  .work-history-content {
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job {
+    margin-bottom: 30px;
+  }
+  
+  .job:last-child {
+    margin-bottom: 0;
+  }
+  
+  .job h3 {
+    color: #444;
+    font-size: 20px;
+    border-bottom: 2px solid #666;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+  }
+  
+  .job p {
+    margin-bottom: 10px;
+  }
+  
+  .job ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .job li {
+    margin-bottom: 5px;
+  }

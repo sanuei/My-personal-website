@@ -1,0 +1,31 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%; /* 确保容器占满整个宽度 */
+  }
+  
+  .social-icon {
+    display: flex; /* 使用 flex 布局来居中 SVG */
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    width: 36px; /* 设置固定宽度 */
+    height: 36px; /* 设置固定高度 */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-icon svg {
+    fill: #5D4037;
+    width: 100%; /* SVG 填满容器 */
+    height: 100%; /* SVG 填满容器 */
+  }
+  
+  .social-icon:hover svg {
+    fill: #795548;
+  }
