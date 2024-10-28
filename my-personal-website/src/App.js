@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import WorkHistory from './components/WorkHistory';
 import Contact from './components/Contact';
 import SocialMedia from './components/SocialMedia';
+import GitHubBlog from './components/GitHubBlog';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {currentPage === 'projects' && <Projects />}
       {currentPage === 'workHistory' && <WorkHistory />}
       {currentPage === 'contact' && <Contact />}
+      {currentPage === 'github' && <GitHubBlog />}
       <SocialMedia />
     </div>
   );

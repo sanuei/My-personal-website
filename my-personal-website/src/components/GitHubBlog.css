@@ -1,0 +1,182 @@
+/* 主容器样式 */
+.blog-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 个人资料区域样式 */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 头像样式 */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 个人信息文本区域样式 */
+.profile-info {
+  flex: 1;
+}
+
+/* 个人信息标题样式 */
+.profile-info h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+/* 个人信息段落样式 */
+.profile-info p {
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* 个人信息链接样式 */
+.profile-info a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 8px;
+  transition: color 0.3s ease;
+}
+
+.profile-info a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* 项目网格布局 - 固定两列 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 固定两列 */
+  gap: 25px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 项目卡片样式 */
+.project-card {
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+  transition: all 0.3s ease;
+  height: 220px; /* 从200px增加到220px */
+  min-height: 220px; /* 同样增加最小高度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* 项目卡片内容容器 */
+.project-card-content {
+  flex: 1;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* 项目标题样式 */
+.project-card h3 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 项目描述文本样式 */
+.project-card p {
+  color: #666;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  font-size: 0.9em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 减少显示行数 */
+  -webkit-box-orient: vertical;
+}
+
+/* 项目链接按钮样式 */
+.project-card a {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #5D4037;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+  position: absolute; /* 固定按钮位置 */
+  bottom: 15px; /* 距离底部距离 */
+  left: 20px; /* 左侧对齐 */
+}
+
+/* 项目卡片悬停效果 */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 分页容器样式 */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* 分页按钮样式 - 统一颜色风格 */
+.page-button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* 圆角与其他按钮统一 */
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 当前页按钮样式 */
+.page-button.active {
+  background-color: #5D4037; /* 统一为棕色主题 */
+  color: white;
+  border-color: #5D4037;
+}
+
+/* 分页按钮悬停效果 */
+.page-button:hover:not(.active) {
+  background-color: #f0f0f0;
+  border-color: #5D4037;
+  transform: translateY(-2px);
+}
+
+/* 加载状态样式 */
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  color: #666;
+}
