@@ -4,6 +4,10 @@ import './Header.css';
 function Header({ setCurrentPage }) {
   return (
     <header className="site-header">
+      <button 
+        className="home-button"
+        onClick={() => setCurrentPage('home')}
+      />
       <nav>
         <ul>
           <li><button className="nav-button" onClick={() => setCurrentPage('resume')}>履歴書</button></li>

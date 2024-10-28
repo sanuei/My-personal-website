@@ -1,0 +1,140 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.name-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.name-container {
+  margin-bottom: 20px;
+}
+
+.name-title h1 {
+  font-size: 3em;
+  color: #333;
+  margin: 0;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.name-title .kana {
+  font-size: 1.2em;
+  color: #666;
+  margin: 0 0 20px 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+.name-title .job-title {
+  font-size: 1.5em;
+  color: #666;
+  margin: 0;
+  margin-top: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 修改菜单网格布局为固定两列 */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+.menu-item h2 {
+  color: #5D4037;
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.menu-item p {
+  color: #666;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* 移动端响应式布局 */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .name-title h1 {
+    font-size: 2.5em;
+  }
+
+  .name-title .kana {
+    font-size: 1em;
+  }
+
+  .name-title .job-title {
+    font-size: 1.3em;
+  }
+
+  .menu-item {
+    height: auto;
+    min-height: 120px;
+  }
+
+  .name-kana {
+    font-size: 0.9em;
+    top: -20px;
+  }
+}
+
+.kana {
+  font-size: 0.8em;
+}
+
+.name-hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.name-kana {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  color: #666;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Noto Sans JP', sans-serif;
+  white-space: nowrap;
+}
+
+.name-hover-container:hover .name-kana {
+  opacity: 1;
+}
